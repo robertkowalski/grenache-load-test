@@ -1,7 +1,7 @@
 #!/bin/bash
 
-INTERVAL=$1
-COUNT=150
+INTERVAL=50
+COUNT=100
 START_PORT=4000
 
 for i in `seq 1 $COUNT`;
