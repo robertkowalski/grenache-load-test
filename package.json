@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "grenache-nodejs-http": "*",
-    "grenache-nodejs-link": "^0.7.3"
+    "grenache-nodejs-link": "^0.7.3",
+    "lodash": "^4.17.4"
   }
 }

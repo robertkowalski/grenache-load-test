@@ -3,7 +3,6 @@
 const PORT = +process.argv[2]
 const INTERVAL = +process.argv[3]
 
-
 const Grenache = require('grenache-nodejs-http')
 const { PeerRPCServer } = require('grenache-nodejs-http')
 const Link = require('grenache-nodejs-link')
