@@ -5,8 +5,8 @@ const INTERVAL = +process.argv[3]
 
 
 const Grenache = require('grenache-nodejs-http')
-const Link = Grenache.Link
-const Peer = Grenache.PeerRPCServer
+const { PeerRPCServer } = require('grenache-nodejs-http')
+const Link = require('grenache-nodejs-link')
 
 const _ = require('lodash')
 
@@ -15,7 +15,7 @@ const link = new Link({
 })
 link.start()
 
-const peer = new Peer(link, {})
+const peer = new PeerRPCServer(link, {})
 peer.init()
 
 const service = peer.transport('server')

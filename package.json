@@ -9,6 +9,7 @@
   "author": "Robert Kowalski <rok@kowalski.gd>",
   "license": "MIT",
   "dependencies": {
-    "grenache-nodejs-http": "^0.1.4"
+    "grenache-nodejs-http": "*",
+    "grenache-nodejs-link": "^0.7.3"
   }
 }

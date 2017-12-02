@@ -3,16 +3,15 @@
 const PORT = process.argv[2]
 const INTERVAL = +process.argv[3]
 
-const Grenache = require('grenache-nodejs-http')
-const Link = Grenache.Link
-const Peer = Grenache.PeerRPCClient
+const { PeerRPCClient } = require('grenache-nodejs-http')
+const Link = require('grenache-nodejs-link')
 
 const link = new Link({
   grape: 'http://127.0.0.1:30001'
 })
 link.start()
 
-const peer = new Peer(link, {})
+const peer = new PeerRPCClient(link, {})
 peer.init()
 
 setInterval(() => {
